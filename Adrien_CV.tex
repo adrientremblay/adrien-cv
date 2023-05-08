@@ -23,13 +23,15 @@
 % The font could be set to Windows-specific Calibri by using the 'calibri' option
 \documentclass[]{mcdowellcv}
 
+\usepackage{hyperref}
+
 % For mathematical symbols
 \usepackage{amsmath}
 
 % Set applicant's personal data for header
-\name{Gayle L. McDowell}
-\address{123 Spruce St, Apt 35 \linebreak Philadelphia PA 19103}
-\contacts{(555) 555-1212 \linebreak gayle@careercup.com}
+\name{Adrien Tremblay}
+\address{adrientremblay.com \linebreak github.com/adrientremblay}
+\contacts{(514) 709-1678 \linebreak adrien@adrientremblay.com}
 
 \begin{document}
 
@@ -38,69 +40,57 @@
 	
 	% Print the content
 	\begin{cvsection}{Employment}
-		\begin{cvsubsection}{Software Engineer, Intern}{Apple Computer}{Summer 2004}
-			iChat AV			
+		\begin{cvsubsection}{Software Engineer, Intern}{Matrox Video}{Summer 2022}
+		    Display Wall Low Level	
 			\begin{itemize}
-				\item Reduced time to render the user’s buddy list by 75\% by implementing prediction algorithm.
-				\item Implemented iChat integration with OS X Spotlight Search by creating tool which extracts metadata from saved chat transcripts and provides metadata to a system-wide search database.
-				\item Redesigned chat file format and implemented backwards compatibility for search.
+                \item Collaborated with senior developers to enhance C++ code and resolve existing bugs.
+                \item Worked on a in-house tool to test video functionality.
 			\end{itemize}
 		\end{cvsubsection}
 		
-		\begin{cvsubsection}{Lead Student Ambassador}{Microsoft Corporation}{Fall 2003 -- Spring 2005}	
+		\begin{cvsubsection}{Software Engineer, Intern}{Genetec}{Fall 2021}	
+            Core Platform
 			\begin{itemize}
-				\item Promoted to Lead Student Ambassador in Fall 2004; supervised 10 -- 15 Student Ambassadors.
-				\item Created and taught Computer Science course, CSE 099: Software Design and Development.
+                \item Contributed to a new pipeline architecture project in C\# and the .NET framework.
+                \item Resolved various existing bugs on the company flagship product: Security Center.
 			\end{itemize}
 		\end{cvsubsection}
 		
-		\begin{cvsubsection}{Head Teaching Assistant}{University of Pennsylvania}{Fall 2001 -- Spring 2005}		
+		\begin{cvsubsection}{Software Tester, Intern}{Nakisa}{Summer 2021}		
 			\begin{itemize}
-				\item Courses: Advanced Java III, Software Engineering, Mathematical Foundations of Computer Science I \& II.
-				\item Promoted to Head TA in Fall 2004; led weekly meetings and supervised four other TAs.
-			\end{itemize}
-		\end{cvsubsection}
-		
-		\begin{cvsubsection}{Software Design Engineer, Intern}{Microsoft Corporation}{Summers 2001 -- 2003}
-			Visual Studio Core (Summer 2003)		
-			\begin{itemize}
-				\item Implemented a user interface for the VS open file switcher (ctrl-tab) and extended it to tool windows.
-				\item Created service to provide gradient across VS and VS add-ins. Optimized service via caching.
-			\end{itemize}
-			Programmer Productivity Research Center (Summers 2001, 2002)
-			\begin{itemize}
-				\item Built app to compute similarity of all methods in a code base; reduced time from $O(n^2)$ to $O(n\ log\ n)$. 
-				\item Created test case generation tool which creates random XML docs from XML Schema.
+                \item Developed automated test cases and improved existing ones.
+                \item Wrote sequential of test cases for manual testing.
 			\end{itemize}
 		\end{cvsubsection}
 	\end{cvsection}
 	
 	\begin{cvsection}{Education}
-		\begin{cvsubsection}{Philadelphia, PA}{University of Pennsylvania}{Fall 2000 -- May 2005}
+		\begin{cvsubsection}{Montreal, Canada}{Concordia University}{Winter 2018 -- Winter 2023}
 			\begin{itemize}
-				\item M.S.E. in Computer and Information Science, May 2005. GPA: 3.6
-				\item B.S.E. in Computer Science Engineering with Minor in Mathematics, May 2005.  In-major GPA: 3.4.
-				\item Graduate Coursework: Software Foundations; Computer Architecture; Algorithms; Artificial Intelligence; Comparison of Learning Algorithms; Computational Theory.
-				\item Undergraduate Coursework: Operating Systems; Databases; Algorithms; Programming Languages; Comp. Architecture; Engineering Entrepreneurship; Calculus III.
+				\item B.S.E. in Software Engineering. Graduating in Winter 2023.
+                \item Coursework: Operating Systems; Databases; Data Structures \& Algorithms; Computer Graphics; Programming Languages; System Hardware; Discrete Mathematics; Compilers.
 			\end{itemize}
 		\end{cvsubsection}
 	\end{cvsection}
 	
-	\begin{cvsection}{Technical Experience}
+	\begin{cvsection}{Personal Projects}
 		\begin{cvsubsection}{Projects}{}{}
 			\begin{itemize}
-				\item \textbf{Multi-User Drawing Tool} (2004). Electronic classroom where multiple users can view and simultaneously draw on a “chalkboard” with each person’s edits synchronized.  C++, MFC
-				\item \textbf{Synchronized Calendar} (2003 – 2004). Desktop calendar with globally shared and synchronized calendars, allowing users to schedule meetings with other users.  C\#.NET, SQL, XML
-				\item \textbf{Operating System} (2002).  UNIX-style OS with scheduler, file system, text editor and calculator. C
+				\item \textbf{\href{https://github.com/adrientremblay/RayTracer}{Ray Tracer}} (2023). Program that ray traces an image given a JSON file describing the geometry of a scene and the intended render parameters. Capable of global illumination ray tracing and local illumination path tracing. C++, JSON 
+                \item \textbf{\href{https://github.com/adrientremblay/AudioVisualizer}{Audio Frequency Visualizer}} (2023). Interactive visual program that plays an audio file, performs signal processing on the stream, and visualizes the audio frequencies either as 2D bars, 3D bars, or a 3D mesh. Features UI elements to configure the render. C++, OpenGL 
+                \item \textbf{\href{https://github.com/adrientremblay/Compiler}{Compiler}} (2021).  Minimalist blog website made using using static site generation. Hosted on a VPS with a mail server. HTML, CSS, Jekyll, Postfix \& Dovecot
 			\end{itemize}
 		\end{cvsubsection}
 	\end{cvsection}
 	
-	\begin{cvsection}{Additional Experience and Awards}
+	\begin{cvsection}{Game Jams and Hackathons}
 		\begin{cvsubsection}{}{}{}	
 			\begin{itemize}
-				\item \textbf{Instructor (2003 – 2005):} Taught two full-credit Computer Science courses; average ratings of 4.8 out of 5.0.
-				\item \textbf{Third Prize, Senior Design Projects:} Awarded 3rd prize for Synchronized Calendar project, out of 100 projects.
+				\item \textbf{Ludum Dare 53 - Snail Mail (Summer 2023)} Graph theory puzzle game about pathing coloured mail delivery snails to delivery mail while avoiding slime of their own colour. C++, SFML.
+				\item \textbf{Ludum Dare 52 - Galactic Garden (Winter 2023)} Top down space shooter about planting space crops and defending them from invading cosmic crows. C++, SFML.
+				\item \textbf{Ludum Dare 51 - Forest of the Lost (Fall 2022)} Story and horror game about uncovering the dark secrets of a forest where children go missing. C++, SFML.
+				\item \textbf{Ludum Dare 50 - Final Forest (Summer 2022)} Real Time Strategy game about defending a forest from invading lumberjacks by deploying various woodland creatures. C++, SFML.
+				\item \textbf{ConU Hacks V - Spotifeels (Summer 2022)} Hackathon Django and React.js web app to regularlly query employees on mental wellness. C++, SFML.
 			\end{itemize}
 		\end{cvsubsection}
 	\end{cvsection}
@@ -108,8 +98,9 @@
 	\begin{cvsection}{Languages and Technologies}
 		\begin{cvsubsection}{}{}{}	
 			\begin{itemize}
-				\item C++; C; Java; Objective-C; C\#.NET; SQL; JavaScript; XSLT; XML (XSD) Schema 
-				\item Visual Studio; Microsoft SQL Server; Eclipse; XCode; Interface Builder
+				\item Java; C++; C; C\#.NET; Python; JavaScript; HTML; CSS
+				\item Vim; Visual Studio; Eclipse; JetBrains IDEs
+                \item Linux, React.js, Django, Node.js, Selenium, Unity, SFML, OpenGL, CMake, Git
 			\end{itemize}
 		\end{cvsubsection}
 	\end{cvsection}

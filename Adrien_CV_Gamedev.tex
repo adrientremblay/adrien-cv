@@ -38,27 +38,72 @@
 	\makeheader
 
 	\begin{cvsection}{Games}
-		\begin{cvsubsection}{}{}{}	
+		\begin{cvsubsection}{Completed}{}{}	
 			\begin{itemize}
-                \item \textbf{\href{https://github.com/adrientremblay/bloodstone}{Bloodstone (Abandoned)}} A lowpoly vampire FPS game where the player shoots and 
-				uses various vampiric abilities to overthrow an oppressive regime of vampire hunters. Implemented features: modular levels, modeled and rigged hand and gun 
-				with shooting and reloading animations. Particle effects for vampire teleportation. Godot Game Engine.
                 \item \textbf{\href{https://adrientremblay.itch.io/dark-altar-2}{Dark Altar 2}} A first person horror game about collecting skulls to banish a possesed 
-				monk. Implemented features: dynamic loading and unloading of models in the world for performance, advanced creature monster AI with varying levels of 
+				monk. Implemented features: dynamic loading and unloading of models for optimized performance, advanced monster AI with varying levels of 
 				aggression, spacial ambient audio for the forest environment. Made in Godot Game Engine.
+			\end{itemize}
+		\end{cvsubsection}
+		\begin{cvsubsection}{Abandoned}{}{}	
+			\begin{itemize}
+                \item \textbf{\href{https://github.com/adrientremblay/bloodstone}{Bloodstone}} A lowpoly vampire FPS game where the player shoots and 
+				uses various vampiric abilities to overthrow an oppressive regime of vampire hunters. Implemented features: modular levels, modeled and rigged hand and gun 
+				with shooting and reloading animations, particle effects for vampire teleportation. Made in Godot Game Engine.
 			\end{itemize}
 		\end{cvsubsection}
 	\end{cvsection}
 	
 	\begin{cvsection}{Game Jams}
-		\begin{cvsubsection}{}{}{}	
+		\begin{cvsubsection}{Solo}{}{}	
 			\begin{itemize}
                 \item \textbf{\href{https://ldjam.com/events/ludum-dare/58/gravelight}{Ludum Dare 58 - Gravelight (SOLO)}}A lowpoly first person simulation horror game about digging up graves to collect various artifacts while evading the groundskeepers. Godot Game Engine.
                 \item \textbf{\href{https://ldjam.com/events/ludum-dare/55/dark-altar}{Ludum Dare 55 - Dark Altar (SOLO)}} Puzzle game based on placing "offerings" on a 5x5 grid such that the row/column sums equal the desired numbers in order to summon demons. Godot Game Engine.
+			\end{itemize}
+		\end{cvsubsection}
+		\begin{cvsubsection}{Group}{}{}	
+			\begin{itemize}
+                \item \textbf{\href{https://github.com/Aoof/MyHouseIsBuiltForYou}{GAMERella 2025 - My House Is Build For You (GROUP)}} A retro PSX style first-person walking simulator game where you play as a housewife trapped in a toxic marriage and must choose how to interact with objects to complete tasks. Entry in GAMERella Jam 2025 (completed in a group) Unity Game Engine, Blender.
+                \item \textbf{\href{https://github.com/Chavero2001/MDG_Game}{MDG Jam 2025 - Newcomer (GROUP)}} A topdown bullethell game where you play as an alien invading earth. The player can melee attack humans to absorb their stats and thrown projectile type. Entry in the MDG Game Jam 2025 (completed in a group) Unity Game Engine, Blender.
                 \item \textbf{\href{https://ldjam.com/events/ludum-dare/53/snail-mail-2}{Ludum Dare 53 - Snail Mail (GROUP)}} Graph theory puzzle game about pathing coloured mail delivery snails to delivery mail while avoiding slime of their own colour. C++, SFML.
 				\item \textbf{\href{https://ldjam.com/events/ludum-dare/52/galactic-garden}{Ludum Dare 52 - Galactic Garden (GROUP)}} Top down space shooter about planting space crops and defending them from invading cosmic crows. C++, SFML.
 				\item \textbf{\href{https://ldjam.com/events/ludum-dare/51/forest-of-the-lost}{Ludum Dare 51 - Forest of the Lost (GROUP)}} Story and horror game about uncovering the dark secrets of a forest where children go missing. C++, SFML.
 				\item \textbf{\href{https://ldjam.com/events/ludum-dare/50/final-forest}{Ludum Dare 50 - Final Forest (GROUP)}} Real Time Strategy game about defending a forest from invading lumberjacks by deploying various woodland creatures. C++, SFML.
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+
+	\begin{cvsection}{Projects}
+		\begin{cvsubsection}{Websites}{}{}
+			\begin{itemize}
+                \item \textbf{\href{https://github.com/adrientremblay/jai-soif-montreal}{jaisoifmontreal.com}} A website where all public water fountains in Montreal are visualized on an interactive map. Users can also click on individual fountains to see further details. PostgreSQL, Java Spring, Angular.
+                \item \textbf{\href{https://github.com/adrientremblay/first-person-site}{adrientremblay.com}} A first person lowpoly 3D personal website where users can look around and interact with a virtual computer to access my real personal portfolio website. Three.js, Jekyll, Blender, Nginx.
+			\end{itemize}
+		\end{cvsubsection}
+		
+		\newpage
+
+		\begin{cvsubsection}{Graphics}{}{}
+			\begin{itemize}
+                \item \textbf{\href{https://github.com/adrientremblay/RayTracer}{Ray Tracer}} A program that renders scene data encoded as a JSON. Features gamma correction, point and area lights. Eigen3. C++.
+                \item \textbf{\href{https://github.com/adrientremblay/AudioVisualizer}{Open GL Audio Visualizer}} An interactive OpenGL application that performs a Fourmier transform on music being played and displays the audio spectrum by rendering 3D bars of varying heights or applying these values to vertex normals on a given model.OpenGl. C++.
+                \item \textbf{\href{https://github.com/adrientremblay/RayCaster}{Ray Caster}} A simple textured ray casting render (DOOM inspired 2.5D rendering technique) where the player can walk around a small area. OpenGL. C++.
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	
+	\begin{cvsection}{Open Source Contributions}
+		\begin{cvsubsection}{\href{https://github.com/raycastly/texture-ripper}{Texture Ripper}}{}{}
+			A JavaScript Electron app to extract textures from images using homography.
+			\begin{itemize}
+				\item Changed default scaling of textures to keep aspect ratio
+				\item Ability to delete textures via keyboard
+			\end{itemize}
+		\end{cvsubsection}
+		\begin{cvsubsection}{\href{https://github.com/konvajs/site}{Konva JS}}{}{}
+			A Javascript 2D canvas framework for web and electron apps.
+			\begin{itemize}
+				\item Fixed typos in Node API page
 			\end{itemize}
 		\end{cvsubsection}
 	\end{cvsection}
@@ -104,17 +149,5 @@
 		\end{cvsubsection}
 	\end{cvsection}
 
-	\newpage
-
-	\begin{cvsection}{Other Projects}
-		\begin{cvsubsection}{Projects}{}{}
-			\begin{itemize}
-				\item \textbf{\href{https://github.com/adrientremblay/RayTracer}{Ray Tracer}} (2023). Program that ray traces an image given a JSON file describing the geometry of a scene and the intended render parameters. Capable of global illumination ray tracing and local illumination path tracing. C++, JSON 
-                \item \textbf{\href{https://github.com/adrientremblay/AudioVisualizer}{Audio Frequency Visualizer}} (2023). Interactive visual program that plays an audio file, performs signal processing on the stream, and visualizes the audio frequencies either as 2D bars, 3D bars, or a 3D mesh. Features UI elements to configure the render. C++, OpenGL 
-                \item \textbf{\href{https://github.com/adrientremblay/Compiler}{Compiler}} (2023). Table-Driven Top-Down Compiler for a C++ like language. Java
-			\end{itemize}
-		\end{cvsubsection}
-	\end{cvsection}
-	
 \end{document}
 
